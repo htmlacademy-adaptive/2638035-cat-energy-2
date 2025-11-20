@@ -63,12 +63,11 @@ export function processStyles () {
           multi: true,
         },
       ]),
-      // отключил чтобы выдеть в консоли файл css
-      // lightningcss({
-      //   lightningcssOptions: {
-      //     minify: !isDevelopment,
-      //   },
-      // })
+      lightningcss({
+        lightningcssOptions: {
+          minify: !isDevelopment,
+        },
+      })
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());

@@ -1,0 +1,104 @@
+.additional-product {
+  padding-bottom: 18px;
+  border-bottom: 1px #cdcdcd solid;
+
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px 28px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 16px 3px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.additional-product__container {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    margin-bottom: 0;
+    width: 606px;
+  }
+}
+
+.additional-product__title {
+  padding: 12px 0;
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 17px 0 0;
+  }
+}
+
+.additional-product__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 282px;
+    padding-top: 7px;
+  }
+}
+
+.additional-product__button {
+  width: 100%;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 11px 0 10px;
+
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 632px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 244px;
+    margin: 0;
+  }
+}

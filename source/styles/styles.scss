@@ -8,9 +8,14 @@
 @import "./components/inner-title.scss";
 @import "./components/inner-text.scss";
 @import "./components/input-text.scss";
+@import "./components/button.scss";
+@import "./components/special-title.scss";
+
 
 /* BLOCKS */
 /* INDEX */
+@import "./blocks/page.scss";
+@import "./blocks/main.scss";
 @import "./blocks/header.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/costs.scss";
@@ -25,10 +30,19 @@
 @import "./blocks/social.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/specs.scss";
-@import "./blocks/form.scss";
+@import "./blocks/map.scss";
+@import "./blocks/invintation.scss";
+@import "./blocks/address.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/logo.scss";
+
+
 /* CATALOG */
 @import "./blocks/catalog.scss";
-
-/* FORM */
-@import "./blocks/order-groups/order.scss";
-@import "./blocks/order-groups/pet-group.scss"
+@import "./blocks/card.scss";
+@import "./blocks/all-products.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/content.scss";

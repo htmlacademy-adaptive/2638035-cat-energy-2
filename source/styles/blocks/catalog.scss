@@ -3,5 +3,49 @@
 }
 
 .catalog__inner-title {
-  margin-bottom: 36px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 30px 35px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 45px 30px 35px 31px;
+    margin: 0 auto;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #e0e0e0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 0;
+    max-width: 764px;
+    margin: 0 auto 48px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    gap: 14px 80px;
+    max-width: unset;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet) {
+    width: 324px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+  }
 }

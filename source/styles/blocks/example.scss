@@ -1,14 +1,140 @@
-.example {}
+.example {
+  padding: 25px 20px 41px;
+  background-color: #eaeaea;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 0 0 66px;
+  }
+}
+
+.example-wrapper {
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    width: 514px;
+    background-color: #eaeaea;
+    padding-top: 69px;
+  }
+}
+
+.example__container {
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin: 0 31px;
+    padding-bottom: 78px;
+    background-color: #ffffff;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin: 0;
+    background-color: #eaeaea;
+    padding-bottom: 0;
+  }
+}
+
+.example__slider-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet) {
+    background-color: #eaeaea;
+    padding: 0 0 101px;
+
+    &::before {
+      height: 151px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -140px;
+    padding-bottom: 0;
+  }
+}
 
 .example__header {
-  margin: 0;
+  margin: 0 0 40px;
+  padding: 0 30px 0 0;
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 60px;
+    padding: 38px 32px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 60px 0 78px;
+    background-color: #ffffff;
+  }
+}
+
+.example__header-text {
+  @media (min-width: $desktop) {
+    display: block;
+    width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-right: 500px;
+  }
+}
+
+.example__block {
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .example__description {
-  margin: 0;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    min-width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 31px 54px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: unset;
+    width: 432px;
+    margin: 0 0 70px;
+    padding: 0;
+  }
 }
 
-.example__specs {}
+.example__slider {
+  margin: 0 auto;
+}

@@ -1,9 +1,48 @@
-.programs{}
+.programs {
+  @media (min-width: $tablet) {
+    margin: 0 30px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 1220px;
+  }
 }
 
-.programs__unit{}
+.programs__unit {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

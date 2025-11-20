@@ -1,0 +1,21 @@
+.main-footer {
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+}
+
+.main-footer__container {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 41px 9px 33px 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 54px 0 51px;
+  }
+}

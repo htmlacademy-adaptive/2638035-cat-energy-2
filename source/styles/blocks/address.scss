@@ -1,0 +1,38 @@
+.address {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 140px;
+  font-style: normal;
+  text-transform: none;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    text-align: right;
+    width: 170px;
+  }
+
+  @media (min-width: $desktop) {
+    line-height: 20px;
+    text-align: left;
+    padding-top: 6px;
+  }
+}
+
+.address__street {
+  margin: 0;
+}
+
+.address__city {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 19px;
+  }
+}

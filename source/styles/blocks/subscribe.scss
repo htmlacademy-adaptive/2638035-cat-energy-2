@@ -1,0 +1,109 @@
+.subscribe {
+  margin: 0 auto;
+  padding: 34px 0 40px;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 25px;
+    padding: 73px 0 39px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 72px 0 88px;
+    margin: 0;
+  }
+}
+
+.subscribe__container {
+  margin: 0 20px;
+}
+
+.subscribe__title {
+  margin: 0 0 26px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 36px;
+  }
+}
+
+.subscribe__text {
+  padding: 0 0 24px;
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 660px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet) {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.subscribe__input {
+  font-family: $oswald;
+  color: inherit;
+  background: none;
+  border: 1px #cdcdcd solid;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 12px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
+  }
+}
+
+.subscribe__button {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 56px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+    height: 56px;
+    margin: 0;
+  }
+}

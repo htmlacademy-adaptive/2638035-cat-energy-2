@@ -1,8 +1,24 @@
 .header {
-  padding-top: 65px;
+  padding-top: 64px;
   position: relative;
-  background: url("../../images/1/logo-text.svg") no-repeat center 23px;
+  background: url("../../images/logo/logo-text.svg") no-repeat center 23px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    padding: 40px 35px 10px;
+    background: none;
+    border-bottom: none;
+    min-height: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 0 0;
+    background: none;
+    border-bottom: none;
+    z-index: 30;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .header__logo {
@@ -10,10 +26,26 @@
   position: absolute;
   top: 13px;
   left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet) {
+    top: 25px;
+    left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 56px;
+    left: 0;
+  }
 }
 
-.header__img {}
-
-.header__button {
-  background-image: url("../../images/1/menu-nav-mobile.svg");
+.header__img {
+  display: block;
 }

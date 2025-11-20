@@ -1,18 +1,77 @@
 .specs {
-  margin: 0;
+  margin: 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media (min-width: $tablet) {
+    gap: 42px;
+    padding: 0;
+    width: 370px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 48px;
+    padding: 0;
+  }
 }
 
-.specs__block {}
+.specs__block {
+  width: 124px;
+  min-height: 57px;
+  // padding: 15px 0 3px;
+  text-align: center;
+  box-sizing: border-box;
+
+  border-radius: 3px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+  }
+}
+
 
 .specs__parameter {
-  margin: 0;
+  margin: 0 0 8px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  padding: 15px 10px;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0 0 15px;
+  }
 }
 
 .specs__definition {
+  font-family: $lato;
+  font-weight: 400;
+  text-align: center;
   font-size: 12px;
   line-height: 100%;
   vertical-align: middle;
+
+  background-color: #eaeaea;
+  margin: -18px auto 5px;
+  width: 81px;
+  box-sizing: border-box;
+
+
+  @media (min-width: $tablet) {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+    bottom: 0;
+    margin: -20px auto 5px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #eaeaea;
+  }
 }

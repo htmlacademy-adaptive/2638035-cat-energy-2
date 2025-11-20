@@ -1,0 +1,33 @@
+.button {
+  text-decoration: none;
+  color: $white;
+  background-color: $basic-theme;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 10px 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    padding: 14px 5px;
+    width: 242px;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+  }
+}

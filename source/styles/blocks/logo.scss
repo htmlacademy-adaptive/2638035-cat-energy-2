@@ -1,0 +1,39 @@
+.logo-wrapper {
+  padding: 35px 0 0;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: $tablet;
+  border-bottom: 1px solid #d9d9d9;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: unset;
+    max-width: unset;
+    border-bottom: none;
+    text-align: unset;
+    padding-top: 13px;
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__image {
+  display: block;
+  margin: 0 auto 16px;
+  color: #111111;
+  transition: color 0.3s ease;
+
+  width: 128px;
+  height: 24px;
+
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}
