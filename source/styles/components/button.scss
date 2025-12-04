@@ -9,6 +9,12 @@
   font-family: inherit;
   text-transform: uppercase;
   padding: 10px 0;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
 
   &:hover {
     background-color: #5eaa2f;

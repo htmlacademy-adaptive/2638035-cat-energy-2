@@ -16,6 +16,21 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   &::before {
     content: "";

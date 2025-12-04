@@ -40,22 +40,52 @@
   height: 100%;
   position: relative;
   z-index: 20;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
 
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
+.map__no-script {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-image:
+    image-set(
+      url("../../images/location/location@1x.webp") 1x type("image/webp"),
+      url("../../images/location/location@2x.webp") 2x type("image/webp"),
+      url("../../images/location/location@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/location/location@2x.jpg") 2x type("image/jpeg")
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #494747;
+
+
+  @media (min-width: $tablet) {
     background-image:
-      image-set(url("../../images/mobile/location@1x.webp") 1x type("image/webp"),
-      url("../../images/mobile/location@2x.webp") 2x type("image/webp"),
-      url("../../images/mobile/location@1x.jpg") 1x type("image/jpeg"),
-      url("../../images/mobile/location@2x.jpg") 2x type("image/jpeg"));
-    background-position: 0 -455px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #494747;
-    position: absolute;
-    z-index: 10;
+      image-set(
+        url("../../images/location/location-t@1x.webp") 1x type("image/webp"),
+        url("../../images/location/location-t@2x.webp") 2x type("image/webp"),
+        url("../../images/location/location-t@1x.jpg") 1x type("image/jpeg"),
+        url("../../images/location/location-t@2x.jpg") 2x type("image/jpeg")
+      );
+  }
+
+  @media (min-width: $desktop) {
+    background-image:
+      image-set(
+        url("../../images/location/location-d@1x.webp") 1x type("image/webp"),
+        url("../../images/location/location-d@2x.webp") 2x type("image/webp"),
+        url("../../images/location/location-d@1x.jpg") 1x type("image/jpeg"),
+        url("../../images/location/location-d@2x.jpg") 2x type("image/jpeg")
+      );
   }
 }

@@ -22,6 +22,12 @@
   right: 21px;
   display: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.15);
+  }
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -103,6 +109,13 @@
   display: block;
   padding: 21px 0 24px;
   text-align: center;
+  transition: transform 0.3s ease;
+
+
+  &:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
 
   &:hover {
     opacity: 0.6;

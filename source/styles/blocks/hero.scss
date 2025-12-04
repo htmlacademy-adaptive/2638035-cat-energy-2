@@ -64,7 +64,7 @@
       height: calc(100% + 115px);
       background-image:
         image-set(url("../../images/hero/index-background-d@1x.webp") 1x type("image/webp"),
-        url("../../images/hero/index-background-d@x2.webp") 2x type("image/webp"),
+        url("../../images/hero/index-background-d@2x.webp") 2x type("image/webp"),
         url("../../images/hero/index-background-d@1x.jpg") 1x type("image/jpeg"),
         url("../../images/hero/index-background-d@2x.jpg") 2x type("image/jpeg"));
       background-color: #4b4a4f;
@@ -88,7 +88,6 @@
     &::before {
       content: "";
       position: absolute;
-
       width: 552px;
       height: 499px;
       background-image:

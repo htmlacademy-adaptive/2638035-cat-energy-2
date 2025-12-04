@@ -35,6 +35,11 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
+
   @media (min-width: $tablet) {
     top: 25px;
     left: 30px;
@@ -48,4 +53,5 @@
 
 .header__img {
   display: block;
+  transition: transform 0.3s ease;
 }

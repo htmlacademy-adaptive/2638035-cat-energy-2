@@ -1,6 +1,6 @@
 .social {
   margin: 0 0 21px 20px;
-  padding: 0;
+  padding: 4px 0 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +24,13 @@
 
 .social__link {
   color: #666666;
+  transition: transform 0.3s ease;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+    color: $basic-theme;
+  }
 
   &:hover {
     color: $basic-theme;
@@ -32,5 +39,17 @@
   &:active {
     color: $basic-theme;
     opacity: 0.3;
+  }
+
+  .social__icon {
+    width: 28px;
+    height: 22px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:focus .social__icon,
+  &:hover .social__icon {
+    transform: scale(1.55);
   }
 }

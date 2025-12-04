@@ -15,7 +15,7 @@
   <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/index.js" defer="defer"></script>
 </head>
 
 <body class="page__body page__body--index">
@@ -115,11 +115,11 @@
             по 16 часов в день.</p>
           <div class="example__container">
             <dl class="example__specs specs">
-              <div class="specs__block" role="group">
+              <div class="specs__block">
                 <dt class="specs__parameter">5 КГ</dt>
                 <dd class="specs__definition">снижение веса</dd>
               </div>
-              <div class="specs__block" role="group">
+              <div class="specs__block">
                 <dt class="specs__parameter">60 ДНЕЙ</dt>
                 <dd class="specs__definition">затрачено времени</dd>
               </div>
@@ -136,32 +136,20 @@
             <ul class="slider__list">
               <li class="slider__screen slider__screen--before">
                 <picture>
-                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
-                    ./images/slider/slider-cat-before-t@1x.webp 1x,
-                    ./images/slider/slider-cat-before-t@2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
-                    ./images/slider/slider-cat-before-t@1x.png 1x,
-                    ./images/slider/slider-cat-before-t@2x.png 2x">
+                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="./images/slider/slider-cat-before-t@1x.webp, ./images/slider/slider-cat-before-t@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="./images/slider/slider-cat-before-t@1x.png, ./images/slider/slider-cat-before-t@2x.png 2x">
 
-                  <source type="image/webp" srcset="
-                    ./images/slider/slider-cat-before@1x.webp 1x,
-                    ./images/slider/slider-cat-before@2x.webp 2x">
+                  <source type="image/webp" srcset="./images/slider/slider-cat-before@1x.webp, ./images/slider/slider-cat-before@2x.webp 2x">
                   <img class="slider__image" src="./images/slider/slider-cat-before@1x.png" srcset="./images/slider/slider-cat-before@2x.png 2x" alt="Толстый кот" width="280" height="256">
                 </picture>
 
               </li>
               <li class="slider__screen slider__screen--after">
                 <picture>
-                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
-                    ./images/slider/slider-cat-after-t@1x.webp 1x,
-                    ./images/slider/slider-cat-after-t@2x.webp 2x">
-                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
-                    ./images/slider/slider-cat-after-t@1x.png 1x,
-                    ./images/slider/slider-cat-after-t@2x.png 2x">
+                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="./images/slider/slider-cat-after-t@1x.webp, ./images/slider/slider-cat-after-t@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="./images/slider/slider-cat-after-t@1x.png, ./images/slider/slider-cat-after-t@2x.png 2x">
 
-                  <source type="image/webp" srcset="
-                    ./images/slider/slider-cat-after@1x.webp 1x,
-                    ./images/slider/slider-cat-after@2x.webp 2x">
+                  <source type="image/webp" srcset="./images/slider/slider-cat-after@1x.webp, ./images/slider/slider-cat-after@2x.webp 2x">
                   <img class="slider__image" src="./images/slider/slider-cat-after@1x.png" srcset="./images/slider/slider-cat-after@2x.png 2x" alt="Худой кот" width="280" height="256">
                 </picture>
 
@@ -194,6 +182,12 @@
 
           </div>
           <div class="map__container">
+            <noscript>
+              <div class="map__no-script">
+                <p class="visually-hidden">JavaScript отключён. Некоторые функции страницы могут быть недоступны.
+                  Включите JavaScript, чтобы получить полный функционал.</p>
+              </div>
+            </noscript>
             <iframe class="map__image" title="Карта: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428381984!2d30.32050301271296!3d59.93879686198291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1761035333839!5m2!1sen!2s" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>

@@ -18,16 +18,12 @@
 
 .logo {
   display: inline-block;
-}
+  transition: transform 0.3s ease;
 
-.logo__image {
-  display: block;
-  margin: 0 auto 16px;
-  color: #111111;
-  transition: color 0.3s ease;
-
-  width: 128px;
-  height: 24px;
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
 
   &:hover {
     color: #3e3e3e;
@@ -35,5 +31,15 @@
 
   &:active {
     color: #6b6b6b;
+    opacity: 0.3;
   }
+}
+
+.logo__image {
+  display: block;
+  margin: 0 auto 16px;
+  color: #111111;
+  transition: color 0.3s ease;
+  width: 128px;
+  height: 24px;
 }
